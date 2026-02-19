@@ -2,12 +2,14 @@
 document.getElementById('navToggle').addEventListener('click', () => {
   document.getElementById('navLinks').classList.toggle('open');
 });
+
 // Close mobile nav on link click
 document.querySelectorAll('.nav-links a').forEach(link => {
   link.addEventListener('click', () => {
     document.getElementById('navLinks').classList.remove('open');
   });
 });
+
 // ── Scroll fade-up animation ──
 const observer = new IntersectionObserver(
   entries => {
@@ -19,7 +21,9 @@ const observer = new IntersectionObserver(
   },
   { threshold: 0.1 }
 );
+
 document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
 // ── Projects data & toggle ──
 const projectsData = {
   finance: [
@@ -32,16 +36,17 @@ const projectsData = {
       description: 'Designed a real-time dashboard tracking portfolio Greeks, P&L attribution, and volatility exposure across multi-leg options positions.',
     },
   ],
+
+  // ✅ UPDATED SECTION
   quant: [
     {
-      title: 'Mean Reversion Strategy',
-      description: 'Developed and backtested a mean-reversion algorithm on equity pairs using z-score signals and dynamic position sizing.',
-    },
-    {
-      title: 'Volatility Surface Modeler',
-      description: 'Created a tool to construct and analyze implied volatility surfaces, detecting skew anomalies for spread trade entries.',
+      title: 'Wealth Management Optimizer',
+      description:
+        'This project develops a quantitative portfolio optimizer using Modern Portfolio Theory. It analyzes historical multi-asset data to estimate risk and return, then computes the allocation that maximizes the Sharpe ratio while generating the efficient frontier to illustrate the risk–return trade-off.',
+      link: 'https://github.com/shreeshbastakoti041-max/Wealth_Management_Optimizer'
     },
   ],
+
   data: [
     {
       title: 'IRS Dataset Analysis Pipeline',
@@ -53,12 +58,15 @@ const projectsData = {
     },
   ],
 };
+
 let activeCategory = null;
 const grid = document.getElementById('projectsGrid');
 const catBtns = document.querySelectorAll('.cat-btn');
+
 catBtns.forEach(btn => {
   btn.addEventListener('click', () => {
     const cat = btn.dataset.cat;
+
     // Toggle
     if (activeCategory === cat) {
       activeCategory = null;
@@ -66,15 +74,20 @@ catBtns.forEach(btn => {
       catBtns.forEach(b => b.classList.remove('active'));
       return;
     }
+
     activeCategory = cat;
     catBtns.forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
+
     // Render projects
     const projects = projectsData[cat];
+
     grid.innerHTML = projects
       .map(
         (p, i) => `
-        <div class="project-card" style="animation-delay: ${i * 0.1}s">
+        <div class="project-card" 
+             style="animation-delay: ${i * 0.1}s; cursor: ${p.link ? 'pointer' : 'default'}"
+             ${p.link ? `onclick="window.open('${p.link}', '_blank')"` : ''}>
           <h3>${p.title}</h3>
           <p>${p.description}</p>
         </div>`
