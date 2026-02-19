@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shreesh Bastakoti — Portfolio</title>
+  <meta name="description" content="Quantitative Finance, Actuarial Science & Statistics portfolio by Shreesh Bastakoti." />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">shreesh<span class="accent">_</span></a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#research">Research</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="grid-bg"></div>
+    <div class="hero-content fade-up">
+      <p class="mono accent-text">~/quant-finance · ~/actuarial · ~/statistics</p>
+      <h1>Shreesh<br><span class="text-gradient">Bastakoti</span></h1>
+      <p class="hero-sub"><span class="mono">$</span> Modernizing traditional finance through quantitative modeling, data analysis, and advanced derivatives strategies.</p>
+      <div class="hero-buttons">
+        <a href="#about" class="btn btn-primary">Explore More</a>
+        <a href="#contact" class="btn btn-outline">Contact</a>
+      </div>
+    </div>
+  </section>
+  <!-- About -->
+  <section id="about" class="section section-alt">
+    <div class="container">
+      <p class="mono accent-text section-label">About</p>
+      <h2>Where Math Meets Markets</h2>
+      <p class="section-desc">Shreesh combines theoretical rigor with practical market experience — actively engaging in options trading, risk management, and quantitative research across financial markets. He focuses on modernizing traditional finance through quantitative modeling and advanced derivatives strategies.</p>
+      <div class="card-grid cols-3">
+        <div class="card glass fade-up">
+          <div class="card-icon">🎓</div>
+          <h3>University of Idaho</h3>
+          <p>B.S. Statistics — Actuarial Science & Finance concentration. Expected 2027.</p>
+        </div>
+        <div class="card glass fade-up">
+          <div class="card-icon">🏆</div>
+          <h3>Certifications</h3>
+          <p>Barker Trading & Capital Management Group · Bloomberg Market Concepts (BMC)</p>
+        </div>
+        <div class="card glass fade-up">
+          <div class="card-icon">📈</div>
+          <h3>Active Trader</h3>
+          <p>Options & derivatives trading with consistent 10–15% monthly returns. Scaled accounts from $1K → $28K.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <div class="container">
+      <p class="mono accent-text section-label">Experience</p>
+      <h2>Professional Journey</h2>
+      <div class="timeline">
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <div>
+              <h3>Equity & Index Options Trader</h3>
+              <p class="accent-text">Self-Directed Trading</p>
+            </div>
+            <p class="mono muted">Jan 2025 – Present · Moscow, ID</p>
+          </div>
+          <p class="muted">Shreesh approached derivatives not through conventional fundamental or technical analysis, but through the concept of relative mispricing in options — identifying when the market prices risk incorrectly rather than trying to predict direction. His edge is built on reacting to what the market reveals, not forecasting where it will go. This philosophy drives his structured spread strategies and disciplined risk management, allowing him to achieve consistent 10–15% monthly returns and scale challenge accounts from $1,000 to over $28,000.</p>
+        </div>
+        <div class="timeline-item fade-up">
+          <div class="timeline-dot"></div>
+          <div class="timeline-header">
+            <div>
+              <h3>Trade & Finance Intern</h3>
+              <p class="accent-text">Siddhartha Bank</p>
+            </div>
+            <p class="mono muted">Jan 2023 – July 2023 · Kathmandu, Nepal</p>
+          </div>
+          <p class="muted">What drew Shreesh to this role was a curiosity about how banks operate as counterparties to larger institutional players — how capital flows across borders and how each operation demands precision, compliance, and the right skill set at every step. Rotating through Central Remittance, Treasury, and Trade & Finance, he managed Letters of Credit documentation, coordinated with international counterparties, and gained firsthand insight into the operational backbone of cross-border finance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <p class="mono accent-text section-label">Projects</p>
+      <h2>Self-Made Projects</h2>
+      <div class="category-buttons">
+        <button class="cat-btn" data-cat="finance">📈 Finance</button>
+        <button class="cat-btn" data-cat="quant">🤖 Quant Algo</button>
+        <button class="cat-btn" data-cat="data">📊 Data & Statistics</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+  <!-- Research -->
+  <section id="research" class="section section-alt">
+    <div class="container">
+      <p class="mono accent-text section-label">Research</p>
+      <h2>Academic Research</h2>
+      <div class="card-grid cols-3">
+        <div class="card glass fade-up">
+          <div class="card-icon">🗄️</div>
+          <h3>Habitat for Humanity — Housing Market Research</h3>
+          <p class="accent-text small">College of Business & Economics</p>
+          <p class="mono muted tiny">Research Assistant / Co-Author</p>
+          <p class="muted">This interdisciplinary research project examined the dynamics of housing affordability through the lens of publicly available IRS datasets. Shreesh was responsible for cleaning, structuring, and modeling large-scale tax data — a process that improved overall data accuracy by 60% and enabled more reliable downstream analysis.</p>
+        </div>
+        <div class="card glass fade-up">
+          <div class="card-icon">🧠</div>
+          <h3>Machine Learning from First Principles</h3>
+          <p class="accent-text small">College of Engineering</p>
+          <p class="mono muted tiny">Research Assistant / Co-Author</p>
+          <p class="muted">Rather than relying on high-level ML libraries, this research takes a ground-up approach to understanding how learning systems actually work. Shreesh is developing auto-gradient and analytical machine learning frameworks entirely from first principles.</p>
+        </div>
+        <div class="card glass fade-up">
+          <div class="card-icon">🛡️</div>
+          <h3>Depreciation Insurance Modeling</h3>
+          <p class="accent-text small">College of Mathematics & Statistical Science</p>
+          <p class="mono muted tiny">Research Assistant / Co-Author</p>
+          <p class="muted">This forward-looking research sits at the intersection of actuarial science, fintech, and blockchain technology. Shreesh is designing actuarial-based Depreciation Insurance models — a novel insurance product concept that covers asset depreciation over time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <p class="mono accent-text section-label">Skills</p>
+      <h2>Core Competencies</h2>
+      <div class="card-grid cols-3">
+        <div class="fade-up">
+          <h4 class="mono accent-text skill-cat">Markets & Trading</h4>
+          <div class="skill-tags">
+            <span class="tag">Options & Derivatives</span>
+            <span class="tag">Sales & Trading</span>
+            <span class="tag">Risk Management</span>
+            <span class="tag">Capital & Wealth Management</span>
+          </div>
+        </div>
+        <div class="fade-up">
+          <h4 class="mono accent-text skill-cat">Quantitative</h4>
+          <div class="skill-tags">
+            <span class="tag">Statistical Modeling</span>
+            <span class="tag">Quantitative Research</span>
+            <span class="tag">Financial Data Analysis</span>
+            <span class="tag">Actuarial Science</span>
+          </div>
+        </div>
+        <div class="fade-up">
+          <h4 class="mono accent-text skill-cat">Technical</h4>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">R</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Excel</span>
+            <span class="tag">LaTeX</span>
+            <span class="tag">Machine Learning</span>
+          </div>
+        </div>
+      </div>
+      <div class="card glass career-box fade-up">
+        <h3>Career Objectives</h3>
+        <div class="career-grid">
+          <div>
+            <p class="mono accent-text tiny">Short-Term</p>
+            <p class="muted">Sales & Trading · Wealth Management · Financial Data Analyst · Quantitative Research</p>
+          </div>
+          <div>
+            <p class="mono accent-text tiny">Long-Term</p>
+            <p class="muted">Quantitative Analyst · Institutional Trader · Portfolio Manager · Financial Researcher</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact -->
+  <section id="contact" class="section section-alt">
+    <div class="container text-center">
+      <p class="mono accent-text section-label">Contact</p>
+      <h2>Let's Connect</h2>
+      <p class="section-desc center">Open to opportunities in Sales & Trading, Quantitative Research, and Wealth Management.</p>
+      <div class="contact-links">
+        <span class="muted">📍 Moscow, Idaho</span>
+        <a href="mailto:shreesh@example.com" class="muted">✉️ Email</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="muted">🔗 LinkedIn</a>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-inner">
+      <p class="muted small">© 2025 Shreesh Bastakoti. All rights reserved.</p>
+      <p class="mono muted tiny">hand-coded, not generated.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
